@@ -9,7 +9,13 @@ export const Navbar = () => {
     <header className='fixed top-0 z-50 w-full text-white'>
       <div className='flex-between custom-container h-16 md:h-21'>
         {/* Image */}
-        <Image src='/images/logo.svg' alt='logo' width={158} height={36} />
+        <Image
+          src='/images/logo.svg'
+          alt='logo'
+          width={158}
+          height={36}
+          className='max-md:h-8 max-md:w-35.25'
+        />
         {/* nav */}
         <nav className='hidden lg:block'>
           <ul className='flex-start gap-3'>
@@ -23,7 +29,6 @@ export const Navbar = () => {
           </ul>
         </nav>
         {/* button */}
-
         <Button>
           <Link href='#contact'>Get Started</Link>
         </Button>
